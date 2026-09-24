@@ -2,4 +2,4 @@ def authenticate(username, password):
     if username == "admin" and password == "1234":
         return "Login successful"
 
-    return "Invalid credentials"
+    return "Invalid username or password"

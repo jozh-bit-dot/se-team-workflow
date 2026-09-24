@@ -4,6 +4,6 @@ def authenticate(username, password):
     }
 
     if username in users and users[username] == password:
-        return True
+        return "Login successful"
 
-    return False
+    return "Invalid username or password"

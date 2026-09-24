@@ -1,5 +1,9 @@
 def authenticate(username, password):
-    if username == "admin" and password == "1234":
+    users = {
+        "admin": "1234"
+    }
+
+    if username in users and users[username] == password:
         return "Login successful"
 
     return "Invalid username or password"
